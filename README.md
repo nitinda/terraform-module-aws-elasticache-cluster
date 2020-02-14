@@ -36,8 +36,6 @@ _To use this module, add the following call to your code:_
 module "elasticache_memcached_cluster" {
   source = "git::https://github.com/nitinda/terraform-module-aws-elasticache-cluster.git?ref=terraform-12/memcached"
 
-  # Pass in relevant inputs required for this module here
-  # e.g. vpc_id = "${data.terraform_remote_state.networking_shared_services.vpc_id}"
 
 }
 ```
@@ -78,7 +76,7 @@ module.<module_name>.<output_variable_name>
 _The output variable is able to be accessed through terraform state file using the syntax below:_
 
 ```tf
-"${data.terraform_remote_state.<layer_name>.<output_variable_name>}"
+data.terraform_remote_state.<layer_name>.<output_variable_name>
 ```
 
 ---
