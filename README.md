@@ -3,14 +3,14 @@
 
 ## _General_
 
-_This module can be used to deploy a_ _**Elasticache Cluster** on AWS Cloud Provider......_
+_This module can be used to deploy a_ _**Elasticache Memcached Cluster** on AWS Cloud Provider......_
 
 
 ---
 
 ## _Prerequisites_
 
-_This module needs **Terraform 0.11.14** or newer._
+_This module needs **Terraform 0.12.20** or newer._
 _You can download the latest Terraform version from_ [_here_](https://www.terraform.io/downloads.html).
 
 
@@ -20,12 +20,6 @@ _You can download the latest Terraform version from_ [_here_](https://www.terraf
 ## _Features Branches_
 
 _Below we are able to check the resources that are being created as part of this module call:_
-
-<!-- _From branch :_ _**terraform-11/memcached**_ 
-
-- _**Elasticache Cluster**_ -->
-
-_From branch :_ _**terraform-12/memcached**_
 
 - _**Elasticache Memcached Cluster**_
 
@@ -40,7 +34,7 @@ _To use this module, add the following call to your code:_
 
 ```tf
 module "elasticache_cluster" {
-  source = "git::https://github.com/nitinda/terraform-module-aws-elasticache-cluster.git?ref=master"
+  source = "git::https://github.com/nitinda/terraform-module-aws-elasticache-cluster.git?ref=terraform-12/memcached"
 
   # Pass in relevant inputs required for this module here
   # e.g. vpc_id = "${data.terraform_remote_state.networking_shared_services.vpc_id}"
@@ -55,7 +49,6 @@ module "elasticache_cluster" {
 
 _The variables required in order for the module to be successfully called from the deployment repository are the following:_
 
-- _**Details are in respective branch.**_
 
 
 ---
@@ -67,8 +60,9 @@ _The variables required in order for the module to be successfully called from t
 
 _This module has the following outputs:_
 
-
-- _**Details are in respective branch.**_
+- _**cache\_nodes**_
+- _**configuration\_endpoint**_
+- _**cluster\_address**_
 
 
 
@@ -88,7 +82,6 @@ _The output variable is able to be accessed through terraform state file using t
 ```
 
 ---
-
 
 
 ## _Authors_
