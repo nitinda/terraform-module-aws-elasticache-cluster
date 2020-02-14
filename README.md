@@ -27,7 +27,7 @@ _Below we are able to check the resources that are being created as part of this
 
 _From branch :_ _**terraform-12/memcached**_
 
-- _**Elasticache Cluster**_
+- _**Elasticache Memcached Cluster**_
 
 
 ---
