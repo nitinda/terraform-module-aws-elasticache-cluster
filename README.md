@@ -47,6 +47,9 @@ module "elasticache_memcached_cluster" {
 
 _The variables required in order for the module to be successfully called from the deployment repository are the following:_
 
+|**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
+|:----|:----|-----:|:---:|
+| **_tags_** | _Resource tags_ | _map(string)_ | **_Required_** |
 
 
 ---
