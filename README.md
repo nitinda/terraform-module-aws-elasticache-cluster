@@ -33,7 +33,7 @@ _Below we are able to check the resources that are being created as part of this
 _To use this module, add the following call to your code:_
 
 ```tf
-module "elasticache_cluster" {
+module "elasticache_memcached_cluster" {
   source = "git::https://github.com/nitinda/terraform-module-aws-elasticache-cluster.git?ref=terraform-12/memcached"
 
   # Pass in relevant inputs required for this module here
